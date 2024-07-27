@@ -2,21 +2,20 @@
 import java.awt.Color;
 import java.awt.Font;
 import java.text.SimpleDateFormat;
+import java.util.*;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import java.util.*;
-import jdk.jshell.execution.FailOverExecutionControlProvider;
 
-class DClock extends JFrame {
+class Digital_Clock extends JFrame {
 
     JLabel l1, l2;
     SimpleDateFormat d1, d2;
 
-    DClock(String s1) {
+    Digital_Clock(String s1) {
         super(s1);
     }
 
-    DClock() {
+    Digital_Clock() {
 
     }
 
@@ -63,7 +62,7 @@ class DClock extends JFrame {
 
     public static void main(String[] args) {
 
-        DClock k1 = new DClock("Time");
+        Digital_Clock k1 = new Digital_Clock("Time");
         k1.setVisible(true);
         k1.setSize(350, 350);
         k1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
